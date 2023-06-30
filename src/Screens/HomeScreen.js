@@ -24,12 +24,33 @@ const HomeScreen = ({navigation}) => {
     })
 
   return (
-    <View>
-      <Text>HomeScreen</Text>
+    <View style={styles.container}>
+      <ScrollView>
+        {DummyData.map(data => 
+          <TwitterCard 
+            key={data.id}
+            prof={data.prof}
+            id={data.id}
+            name={data.name}
+            verified={data.verified}
+            image={data.image}
+            tweet={data.tweet}
+            rt={data.rt}
+            time={data.time}
+            like={data.like}
+            reply={data.reply}
+          />
+        )}
+      </ScrollView>
     </View>
   )
 }
 
 export default HomeScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#000"
+  }
+})

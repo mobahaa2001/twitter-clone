@@ -23,7 +23,7 @@ export default function App() {
           height: 65,
           backgroundColor: "rgb(0,0,0)",
           borderTopWidth: 1,
-          borderTopColor:"",
+          borderTopColor:"#fff",
         },
         tabBarShowLabel: false,
         tabBarActiveTintColor: "white",
