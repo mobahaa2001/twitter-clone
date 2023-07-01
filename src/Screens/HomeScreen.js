@@ -13,7 +13,7 @@ const HomeScreen = ({navigation}) => {
             headerLeft: () => (
                 
                 <Image 
-                    style={{height: 45, width: 45, borderRadius: 30, marginLeft: 15}}
+                    style={{height: 45, width: 45, borderRadius: 30, marginLeft: 10}}
                     source={require('../assets/my.jpg')}
                 />
             ),
