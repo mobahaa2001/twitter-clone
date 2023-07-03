@@ -25,11 +25,26 @@ const SpaceScreen = ({ navigation }) => {
       <ScrollView style={styles.subCont}>
         <View style={styles.liveCont}>
           <View style={styles.liveTextCont}>
-            <Text style={styles.liveText}>Heppening Now</Text>
+            <Text style={styles.liveText}>Happening Now</Text>
             <Text style={styles.subText}>Spaces going on right now</Text>
           </View>
           <View style={styles.spaceCont}>
-            <SpacesCard />
+            {SpacesData.map((data) => (
+              <SpacesCard
+                key={data.key}
+                title={data.title}
+                tags={data.tags}
+                pic1={data.pic1}
+                pic2={data.pic2}
+                pic3={data.pic3}
+                hostName={data.hostName}
+                hostPic={data.hostPic}
+                listenCont={data.listenCount}
+                desc={data.desc}
+                color={data.color}
+                hostColor={data.hostColor}
+              />
+            ))}
           </View>
         </View>
       </ScrollView>
