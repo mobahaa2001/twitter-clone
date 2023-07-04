@@ -321,6 +321,7 @@ export const ChatData = [
   {
     id: "elonmusk",
     name: "Elon Musk",
+    time: "2H",
     verified: true,
     msg: "Hey Vimal!",
     image: null,
@@ -329,6 +330,7 @@ export const ChatData = [
   {
     id: "ykdojo",
     name: "YK aka CS Dojo",
+    time: "9H",
     msg: "Never do something based on FOMO or peer pressure..",
     verified: false,
     image: null,
